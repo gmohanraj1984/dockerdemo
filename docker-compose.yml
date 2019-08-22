@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  containerdemo:
+    image: ${DOCKER_REGISTRY-}containerdemo
+    build:
+      context: .\ContainerDemo
+      dockerfile: Dockerfile
